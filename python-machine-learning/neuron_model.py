@@ -31,6 +31,7 @@ class Perceptron(object):
         net_input = np.dot(X, self.w_[1:]) + self.w_[0]
         return np.where(net_input >= 0.0, 1, -1)
 
+
 if __name__ == '__main__':
     data = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None)
     samples = 100
